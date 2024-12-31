@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "0ca39329-57ea-4012-b3ba-80c76db2f5ec",
+		"name": "Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30114640"
+	},
+	"item": [
+		{
+			"name": "post user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"I dont know him\",\r\n    \"Age\": 55\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5111/users"
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5111/getUsers"
+			},
+			"response": []
+		},
+		{
+			"name": "get specific user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5111/getUser/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Put request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Viradya\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5111/updateUser/3"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5111/deleteUser/10"
+			},
+			"response": []
+		}
+	]
+}
